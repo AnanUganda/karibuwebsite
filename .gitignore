@@ -1,0 +1,5 @@
+# macOS
+.DS_Store
+
+# Design reference screenshots of a third-party site: keep local, never publish
+designreference/

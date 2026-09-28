@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <!-- PLACEHOLDER: Bedroom, bed made -->
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b9c9bd"/><stop offset="1" stop-color="#98ae9f"/></linearGradient></defs>
+  <rect width="300" height="300" fill="url(#g)"/>
+  <text x="150" y="272" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" fill="rgba(22,58,43,.45)"></text>
+</svg>

@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get a Turnover Quote | Karibu Care Kampala</title>
+  <meta name="description" content="Share your area and unit size for an Airbnb turnover price on WhatsApp. Your first turnover is paid only after you approve the photos.">
+  <meta property="og:title" content="Get a Turnover Quote | Karibu Care Kampala">
+  <meta property="og:description" content="Share your area and unit size for an Airbnb turnover price on WhatsApp. Your first turnover is paid only after you approve the photos.">
+  <meta name="theme-color" content="#163A2B">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230B4F4A'/%3E%3Ccircle cx='16' cy='8.5' r='3.2' fill='%23C96A2B'/%3E%3Cpath d='M13.6 14h4.8l1.6 12h-8z' fill='%23C96A2B'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="logo" href="index.html"><img class="logo__img logo__img--ink" src="assets/img/logo.png" alt="Karibu Care" width="1301" height="525"><img class="logo__img logo__img--white" src="assets/img/logo-white.png" alt="Karibu Care" width="1301" height="525"></a>
+      <nav aria-label="Main">
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#how-it-works">How it works</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="nav__cta"><a class="btn btn--dark" href="https://wa.me/[WHATSAPP_NUMBER]" target="_blank" rel="noopener"><span class="btn__label">Get a quote</span><span class="btn__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-panel">
+        <span class="nav__toggle-bars" aria-hidden="true"></span>Menu
+      </button>
+    </div>
+    <div class="nav__panel" id="nav-panel" hidden>
+      <nav aria-label="Mobile">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#how-it-works">How it works</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn--dark btn--block" href="https://wa.me/[WHATSAPP_NUMBER]" target="_blank" rel="noopener"><span class="btn__label">Get a quote</span><span class="btn__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="quote-hero page-top" aria-labelledby="quote-title">
+      <div class="container" style="padding-top:24px">
+        <h1 class="h-hero" id="quote-title">Get your turnover price.</h1>
+        <p class="body">Answer five quick questions and we'll reply on WhatsApp within <span class="ph">[RESPONSE TIME]</span>. There's no obligation.</p>
+      </div>
+    </section>
+
+    <div class="container quote-grid">
+      <!-- No backend: submitting opens WhatsApp with the answers pre-filled (see assets/js/main.js). -->
+      <form class="form-card" id="quote-form" data-whatsapp="https://wa.me/[WHATSAPP_NUMBER]" aria-labelledby="quote-title">
+        
+          <div class="field" data-field="Your name">
+            <label class="field__label" for="name"><span class="field__n" aria-hidden="true">1</span>Your name</label>
+            <input class="input" id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-err">
+            <p class="field__error" id="name-err">Please fill this in.</p>
+          </div>
+        
+          <div class="field" data-field="WhatsApp number">
+            <label class="field__label" for="whatsapp"><span class="field__n" aria-hidden="true">2</span>WhatsApp number</label>
+            <input class="input" id="whatsapp" name="whatsapp" type="tel" autocomplete="tel" required aria-describedby="whatsapp-err" inputmode="tel">
+            <p class="field__error" id="whatsapp-err">Please fill this in.</p>
+          </div>
+        
+          <div class="field" data-field="Area of your unit">
+            <label class="field__label" for="area"><span class="field__n" aria-hidden="true">3</span>Area of your unit (e.g. Ntinda, Bugolobi)</label>
+            <input class="input" id="area" name="area" type="text" autocomplete="address-level2" required aria-describedby="area-err">
+            <p class="field__error" id="area-err">Please fill this in.</p>
+          </div>
+        
+          <fieldset class="field" data-field="Unit size" aria-describedby="unit-err">
+            <legend><span class="field__n" aria-hidden="true">4</span>Unit size</legend>
+            <div class="chip-select">
+              <label class="chip-option"><input type="radio" name="unit" value="Studio / 1-bed" required><span>Studio / 1-bed</span></label>
+              <label class="chip-option"><input type="radio" name="unit" value="2-bed" required><span>2-bed</span></label>
+              <label class="chip-option"><input type="radio" name="unit" value="3-bed" required><span>3-bed</span></label>
+            </div>
+            <p class="field__error" id="unit-err">Please choose one.</p>
+          </fieldset>
+        
+          <fieldset class="field" data-field="How often you host" aria-describedby="frequency-err">
+            <legend><span class="field__n" aria-hidden="true">5</span>How often you host</legend>
+            <div class="chip-select">
+              <label class="chip-option"><input type="radio" name="frequency" value="A few times a month" required><span>A few times a month</span></label>
+              <label class="chip-option"><input type="radio" name="frequency" value="Weekly" required><span>Weekly</span></label>
+              <label class="chip-option"><input type="radio" name="frequency" value="Most days" required><span>Most days</span></label>
+            </div>
+            <p class="field__error" id="frequency-err">Please choose one.</p>
+          </fieldset>
+        <div class="btn-row">
+          <button class="btn btn--dark btn--block" type="submit"><span class="btn__label">Send my quote request</span><span class="btn__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+        </div>
+        <p class="small">We only use your details to reply about your quote.</p>
+      </form>
+
+      <aside class="quote-side">
+        <section class="next" aria-labelledby="next-title">
+          <h2 id="next-title">What happens next</h2>
+          <ol>
+            <li><span class="next__n" aria-hidden="true">1</span><span>We reply with your price within <span class="ph">[RESPONSE TIME]</span>.</span></li>
+            <li><span class="next__n" aria-hidden="true">2</span><span>We set up a short walkthrough with you or your caretaker.</span></li>
+            <li><span class="next__n" aria-hidden="true">3</span><span>You share your calendar link, and we book your first turnover, paid after you approve the photos.</span></li>
+          </ol>
+        </section>
+        <section class="prefer on-dark" aria-labelledby="prefer-title">
+          <h2 id="prefer-title">Prefer WhatsApp?</h2>
+          <p class="body">Send your area and unit size. You'll get the same price at the same speed, and usually one of us answers.</p>
+          <div class="btn-row"><a class="btn btn--light" href="https://wa.me/[WHATSAPP_NUMBER]" target="_blank" rel="noopener"><span class="btn__label">Chat with us on WhatsApp</span><span class="btn__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
+        </section>
+      </aside>
+    </div>
+
+  </main>
+
+  <footer class="footer on-dark">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <a class="logo" href="index.html"><img class="logo__img logo__img--ink" src="assets/img/logo.png" alt="Karibu Care" width="1301" height="525"><img class="logo__img logo__img--white" src="assets/img/logo-white.png" alt="Karibu Care" width="1301" height="525"></a>
+          <p class="footer__desc">Host without leaving the office. We clean your Kampala Airbnb between guests and send room-by-room photos to your WhatsApp.</p>
+        </div>
+        <div class="footer__cols">
+          <div>
+            <h2>Pages</h2>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#how-it-works">How it works</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="get-a-quote.html">Get a quote</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Contact</h2>
+            <ul>
+              <li><a href="https://wa.me/[WHATSAPP_NUMBER]" target="_blank" rel="noopener">WhatsApp</a></li>
+              <li><a href="get-a-quote.html">Quote form</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Legal</h2>
+            <ul>
+              <!-- TODO: create these pages, then update the links -->
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="footer__legal-row">&copy; 2026 Karibu Care</p>
+      <span class="footer__giant" aria-hidden="true">Karibu</span>
+    </div>
+  </footer>
+</body>
+</html>
